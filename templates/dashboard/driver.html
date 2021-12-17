@@ -1,0 +1,312 @@
+
+{% load static %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>eMathree</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+    <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/nivo-slider/css/nivo-slider.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eBusiness - v2.1.1
+  * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+<style>
+body {
+  background-color: LightGrey;
+}
+
+.vertical-menu {
+  width: 400px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="grid-y medium-grid-frame">
+  <div class="cell shrink header medium-cell-block-container">
+     
+
+
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-4">
+        A medium 4 cell
+      </div>
+      <div class="cell medium-4 medium-cell-block">
+        <p style="width:80vw;">A medium 4 cell block... on medium this content should overflow and let you horizontally scroll across... one might use this for an array of options</p>
+      </div>
+      <div class="cell medium-4">
+        A medium 4 cell
+      </div>
+    </div>
+  </div>
+  <div class="cell medium-auto medium-cell-block-container">
+    <div class="grid-x grid-padding-x">
+      <div class="sidebar" data-color="purple" data-background-color="black" data-image="./assets/img/sidebar-2.jpg">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+      <div class="logo">
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Creative Tim
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="javascript:void(0)">
+              <i class="material-icons">dashboard</i>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+
+
+        </ul>
+
+        <div class="vertical-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:;">
+                  <i class="material-icons">notifications</i> Notifications
+                </a>
+              </li>
+              <!-- your navbar here -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <!-- your content here -->
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://www.creative-tim.com">
+                  Creative Tim
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, made with <i class="material-icons">favorite</i> by
+            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+          </div>
+          <!-- your footer here -->
+        </div>
+      </footer>
+    </div>
+      <div class="cell medium-8 medium-cell-block-y">
+
+      <div class="container-fluid">
+       
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl bg-success">1 of 2
+              <div class="card" >
+                <div class="card-divider">
+                  <b>Lipa Na Mpesa</b>
+                </div>
+                <img src="{% static 'dash/assets/img/cashless/mpesa.jpg' %}">
+                <div class="card-section">
+                  
+                </div>
+              </div>
+
+            </div>
+            <div class="col-xl bg-warning">2 of 2
+
+              <div class="card">
+                <div class="card-divider">
+                  Co-OP
+                </div>
+                <img src="{% static 'dash/assets/img/cashless/coop.jpg' %}">
+                <div class="card-section">
+                  
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-xl bg-success">3 of
+             <div class="card" >
+                <div class="card-divider">
+                  Equity
+                </div>
+                <img src="{% static 'dash/assets/img/cashless/equity.jpg' %}">
+                <div class="card-section">
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <div class="col-xl bg-success">1 of 2
+              <div class="card" >
+                <div class="card-divider">
+                  K.C.B
+                </div>
+                <img src="{% static 'dash/assets/img/cashless/kcb.jpg' %}">
+                <div class="card-section">
+                  
+                </div>
+              </div>
+
+            </div>
+
+              <div class="col-xl bg-success">1 of 2
+              <div class="card" >
+                <div class="card-divider">
+                  Scan QR
+                </div>
+                <img src="{% static 'dash/assets/img/cashless/qr.jpg' %}">
+                <div class="card-section">
+                  
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+          
+              
+       
+      </div>
+
+
+      
+          
+    </div>
+  </div>
+  <div class="cell shrink footer">
+    <h3>Here's my footer</h3>
+  </div>
+</div>
+</div>
+
+
+
+  
+
+
+ 
+
+      
+
+   <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/appear/jquery.appear.js' %}"></script>
+  <script src="{% static 'assets/vendor/knob/jquery.knob.js' %}"></script>
+  <script src="{% static 'assets/vendor/parallax/parallax.js' %}"></script>
+  <script src="{% static 'assets/vendor/wow/wow.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/nivo-slider/js/jquery.nivo.slider.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>
+
+
+{% endblock %}
